@@ -1,11 +1,10 @@
 # Copyright 2026 Maciej M. Kasperek ("vonKrappitz")
 # SPDX-License-Identifier: Apache-2.0
 """
-FRMS Pilot Scheduler — Fatigue Risk Management System dla Korpusu Pilotów Ratownictwa Lotniczego.
+FRMS Pilot Scheduler — a Fatigue Risk Management System for MEDEVAC pilots.
 
-Implementacja prototypowa systemu informatycznego do harmonogramowania dyżurów pilotów
-proponowana w pracy: Kasperek M., Strukturalne deficyty polskiego ratownictwa lotniczego.
-Propozycja reformy, "Wiedza Obronna" 2026.
+Prototype implementation of a scheduling system that assigns pilots to duty
+slots while tracking type-rating currency, cumulative duty load and rotation.
 """
 
 __version__ = "0.1.0"

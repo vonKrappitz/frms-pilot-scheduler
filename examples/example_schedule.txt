@@ -1,245 +1,228 @@
 ================================================================================
-HARMONOGRAM DYŻURÓW LPR — tydzień od 2026-05-27
+HARMONOGRAM DYŻURÓW LPR — tydzień od 2026-06-06
 ================================================================================
-Slotów łącznie: 140
-Obsadzonych:    128 (91.4%)
-Nieobsadzonych: 12
+Slotów łącznie: 133
+Obsadzonych:    122 (91.7%)
+Nieobsadzonych: 11
 
 
-2026-05-27 | EPKK (Kraków-Balice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P024 (Błażej Jabłoński, kat. C) + FO: P022 (Zbigniew Zając, kat. C)
-  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P030 (Hubert Malinowski, kat. D) + FO: P014 (Norbert Kwiatkowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P007 (Grzegorz Lewandowski, kat. A)
+2026-06-06 | EPKK (Kraków-Balice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P021 (Wojciech Dudek, kat. C) + FO: P023 (Aleksander Wieczorek, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
 
-2026-05-27 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P002 (Bartosz Nowak, kat. A)
+2026-06-06 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P005 (Edward Kowalczyk, kat. A)
 
-2026-05-27 | EPLL (Łódź-Lublinek):
-  DYZUR_24H    | HEMS_H145          | Pilot P011 (Krzysztof Kozłowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P012 (Łukasz Jankowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
+2026-06-06 | EPLL (Łódź-Lublinek):
+  ZMIANA_6H    | LST_H135           | Pilot P030 (Hubert Malinowski, kat. D)
+  ZMIANA_6H    | LST_H135           | Pilot P024 (Błażej Jabłoński, kat. C)
 
-2026-05-27 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P014 (Norbert Kwiatkowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P023 (Aleksander Wieczorek, kat. C)
+2026-06-06 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P026 (Damian Majewski, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P016 (Paweł Piotrowski, kat. B)
 
-2026-05-27 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P023 (Aleksander Wieczorek, kat. C) + FO: P021 (Wojciech Dudek, kat. C)
+2026-06-06 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P022 (Zbigniew Zając, kat. C) + FO: P027 (Eryk Olszewski, kat. C)
   DYZUR_24H    | HEMS_H145          | Pilot P012 (Łukasz Jankowski, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P007 (Grzegorz Lewandowski, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
+
+2026-06-06 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P028 (Feliks Jaworski, kat. D) + FO: P029 (Gerard Wróbel, kat. D)
+  DYZUR_24H    | HEMS_H145          | Pilot P011 (Krzysztof Kozłowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P025 (Czesław Król, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
+
+2026-06-07 | EPKK (Kraków-Balice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P030 (Hubert Malinowski, kat. D) + FO: P013 (Maciej Mazur, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P014 (Norbert Kwiatkowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
+  TRENING      | LST_H135           | INSTRUKTOR: P028 (Feliks Jaworski, kat. D) + SZKOLONY: P011 (Krzysztof Kozłowski, kat. B)
+
+2026-06-07 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P003 (Cezary Wiśniewski, kat. A)
+
+2026-06-07 | EPLL (Łódź-Lublinek):
+  DYZUR_24H    | HEMS_H145          | Pilot P020 (Urban Adamczyk, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P012 (Łukasz Jankowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P027 (Eryk Olszewski, kat. C)
+
+2026-06-07 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P023 (Aleksander Wieczorek, kat. C)
   ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
-  TRENING      | HEMS_H145          | INSTRUKTOR: P028 (Feliks Jaworski, kat. D) + SZKOLONY: P008 (Henryk Zieliński, kat. A)
 
-2026-05-27 | EPWR (Wrocław-Strachowice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P027 (Eryk Olszewski, kat. C) + FO: P026 (Damian Majewski, kat. C)
-  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P029 (Gerard Wróbel, kat. D) + FO: P013 (Maciej Mazur, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P030 (Hubert Malinowski, kat. D)
-  ZMIANA_6H    | LST_H135           | Pilot P017 (Robert Grabowski, kat. B)
-
-2026-05-27 | EPZA (Zakopane (TOPR)):
-  DYZUR_24H    | TOPR_AW189         [TOPR] | [ZAŁOGA 2-OSOBOWA] PIC: T003 (Marek Halny, kat. D) + FO: T002 (Krzysztof Tatrzański, kat. D)
-
-2026-05-28 | EPKK (Kraków-Balice):
-  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P013 (Maciej Mazur, kat. B)
-  TRENING      | LST_H135           | INSTRUKTOR: P030 (Hubert Malinowski, kat. D) + SZKOLONY: T001 (Janusz Górski, kat. C)
-
-2026-05-28 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P021 (Wojciech Dudek, kat. C)
-
-2026-05-28 | EPLL (Łódź-Lublinek):
-  DYZUR_24H    | HEMS_H145          | Pilot P015 (Oskar Krawczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P024 (Błażej Jabłoński, kat. C)
-  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
-
-2026-05-28 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P015 (Oskar Krawczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P011 (Krzysztof Kozłowski, kat. B)
-
-2026-05-28 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P025 (Czesław Król, kat. C) + FO: P028 (Feliks Jaworski, kat. D)
-  ZMIANA_6H    | LST_H135           | Pilot P009 (Igor Szymański, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P009 (Igor Szymański, kat. A)
-
-2026-05-28 | EPWR (Wrocław-Strachowice):
-  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P018 (Sebastian Pawłowski, kat. B)
-
-2026-05-29 | EPKK (Kraków-Balice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P021 (Wojciech Dudek, kat. C) + FO: P024 (Błażej Jabłoński, kat. C)
-  DYZUR_24H    | HEMS_H145          | Pilot P016 (Paweł Piotrowski, kat. B)
+2026-06-07 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P025 (Czesław Król, kat. C) + FO: P026 (Damian Majewski, kat. C)
   ZMIANA_6H    | LST_H135           | Pilot P007 (Grzegorz Lewandowski, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P020 (Urban Adamczyk, kat. B)
-
-2026-05-29 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P009 (Igor Szymański, kat. A)
-
-2026-05-29 | EPLL (Łódź-Lublinek):
-  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P030 (Hubert Malinowski, kat. D) + FO: P013 (Maciej Mazur, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
-
-2026-05-29 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
   ZMIANA_6H    | LST_H135           | Pilot P022 (Zbigniew Zając, kat. C)
 
-2026-05-29 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P022 (Zbigniew Zając, kat. C) + FO: P023 (Aleksander Wieczorek, kat. C)
+2026-06-07 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | HEMS_H145          | Pilot P015 (Oskar Krawczyk, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
+
+2026-06-08 | EPKK (Kraków-Balice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P027 (Eryk Olszewski, kat. C) + FO: P023 (Aleksander Wieczorek, kat. C)
+  DYZUR_24H    | HEMS_H145          | Pilot P012 (Łukasz Jankowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P019 (Tomasz Michalski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
+
+2026-06-08 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P005 (Edward Kowalczyk, kat. A)
+
+2026-06-08 | EPLL (Łódź-Lublinek):
+  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P028 (Feliks Jaworski, kat. D) + FO: P016 (Paweł Piotrowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
+
+2026-06-08 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P015 (Oskar Krawczyk, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P009 (Igor Szymański, kat. A)
+
+2026-06-08 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P024 (Błażej Jabłoński, kat. C) + FO: P022 (Zbigniew Zając, kat. C)
   DYZUR_24H    | HEMS_H145          | Pilot P017 (Robert Grabowski, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P001 (Adam Kowalski, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
-
-2026-05-29 | EPWR (Wrocław-Strachowice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P027 (Eryk Olszewski, kat. C) + FO: P026 (Damian Majewski, kat. C)
-  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P029 (Gerard Wróbel, kat. D) + FO: P014 (Norbert Kwiatkowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P012 (Łukasz Jankowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P019 (Tomasz Michalski, kat. B)
-  TRENING      | HEMS_H145          | INSTRUKTOR: P029 (Gerard Wróbel, kat. D) + SZKOLONY: P001 (Adam Kowalski, kat. A)
-
-2026-05-29 | EPZA (Zakopane (TOPR)):
-  DYZUR_24H    | TOPR_AW189         [TOPR] | Pilot T003 (Marek Halny, kat. D)
-
-2026-05-30 | EPKK (Kraków-Balice):
-  DYZUR_24H    | HEMS_H145          | Pilot P015 (Oskar Krawczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P005 (Edward Kowalczyk, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
-
-2026-05-30 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P009 (Igor Szymański, kat. A)
-
-2026-05-30 | EPLL (Łódź-Lublinek):
-  DYZUR_24H    | HEMS_H145          | Pilot P012 (Łukasz Jankowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P018 (Sebastian Pawłowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
-
-2026-05-30 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P005 (Edward Kowalczyk, kat. A)
   ZMIANA_6H    | LST_H135           | Pilot P007 (Grzegorz Lewandowski, kat. A)
 
-2026-05-30 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P025 (Czesław Król, kat. C) + FO: P028 (Feliks Jaworski, kat. D)
-  DYZUR_24H    | HEMS_H145          | Pilot P018 (Sebastian Pawłowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P010 (Jakub Dąbrowski, kat. A)
-  TRENING      | LST_H135           | INSTRUKTOR: P028 (Feliks Jaworski, kat. D) + SZKOLONY: T001 (Janusz Górski, kat. C)
-
-2026-05-30 | EPWR (Wrocław-Strachowice):
-  DYZUR_24H    | HEMS_H145          | Pilot P011 (Krzysztof Kozłowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P010 (Jakub Dąbrowski, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P016 (Paweł Piotrowski, kat. B)
-
-2026-05-30 | EPZA (Zakopane (TOPR)):
-  DYZUR_24H    | TOPR_AW189         [TOPR] | [ZAŁOGA 2-OSOBOWA] PIC: T001 (Janusz Górski, kat. C) + FO: T002 (Krzysztof Tatrzański, kat. D)
-
-2026-05-31 | EPKK (Kraków-Balice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P021 (Wojciech Dudek, kat. C) + FO: P022 (Zbigniew Zając, kat. C)
-  DYZUR_24H    | HEMS_H145          | Pilot P020 (Urban Adamczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P005 (Edward Kowalczyk, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P017 (Robert Grabowski, kat. B)
-  TRENING      | HEMS_H145          | INSTRUKTOR: P028 (Feliks Jaworski, kat. D) + SZKOLONY: P009 (Igor Szymański, kat. A)
-
-2026-05-31 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P026 (Damian Majewski, kat. C)
-
-2026-05-31 | EPLL (Łódź-Lublinek):
-  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P030 (Hubert Malinowski, kat. D) + FO: P013 (Maciej Mazur, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P025 (Czesław Król, kat. C)
-  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
-
-2026-05-31 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P001 (Adam Kowalski, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
-
-2026-05-31 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P026 (Damian Majewski, kat. C) + FO: P027 (Eryk Olszewski, kat. C)
-  DYZUR_24H    | HEMS_H145          | Pilot P019 (Tomasz Michalski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P010 (Jakub Dąbrowski, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P001 (Adam Kowalski, kat. A)
-
-2026-05-31 | EPWR (Wrocław-Strachowice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P023 (Aleksander Wieczorek, kat. C) + FO: P029 (Gerard Wróbel, kat. D)
-  DYZUR_24H    | HEMS_H145          | Pilot P024 (Błażej Jabłoński, kat. C)
-  ZMIANA_6H    | LST_H135           | Pilot P019 (Tomasz Michalski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P010 (Jakub Dąbrowski, kat. A)
-
-2026-06-01 | EPKK (Kraków-Balice):
-  DYZUR_24H    | HEMS_H145          | Pilot P012 (Łukasz Jankowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P020 (Urban Adamczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
-
-2026-06-01 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P027 (Eryk Olszewski, kat. C)
-
-2026-06-01 | EPLL (Łódź-Lublinek):
-  ZMIANA_6H    | LST_H135           | Pilot P017 (Robert Grabowski, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
-
-2026-06-01 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P005 (Edward Kowalczyk, kat. A)
-
-2026-06-01 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P025 (Czesław Król, kat. C) + FO: P028 (Feliks Jaworski, kat. D)
+2026-06-08 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P029 (Gerard Wróbel, kat. D) + FO: P021 (Wojciech Dudek, kat. C)
   DYZUR_24H    | HEMS_H145          | Pilot P014 (Norbert Kwiatkowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
+  TRENING      | HEMS_H145          | INSTRUKTOR: P030 (Hubert Malinowski, kat. D) + SZKOLONY: P010 (Jakub Dąbrowski, kat. A)
+
+2026-06-09 | EPKK (Kraków-Balice):
+  DYZUR_24H    | HEMS_H145          | Pilot P011 (Krzysztof Kozłowski, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
   ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
 
-2026-06-01 | EPWR (Wrocław-Strachowice):
-  DYZUR_24H    | HEMS_H145          | Pilot P011 (Krzysztof Kozłowski, kat. B)
+2026-06-09 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P005 (Edward Kowalczyk, kat. A)
+
+2026-06-09 | EPLL (Łódź-Lublinek):
+  DYZUR_24H    | HEMS_H145          | Pilot P013 (Maciej Mazur, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P007 (Grzegorz Lewandowski, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P010 (Jakub Dąbrowski, kat. A)
+
+2026-06-09 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P021 (Wojciech Dudek, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P020 (Urban Adamczyk, kat. B)
+
+2026-06-09 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P030 (Hubert Malinowski, kat. D) + FO: P025 (Czesław Król, kat. C)
+  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P026 (Damian Majewski, kat. C) + FO: P019 (Tomasz Michalski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P001 (Adam Kowalski, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P009 (Igor Szymański, kat. A)
+  TRENING      | LST_H135           | INSTRUKTOR: P028 (Feliks Jaworski, kat. D) + SZKOLONY: P012 (Łukasz Jankowski, kat. B)
+
+2026-06-09 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | HEMS_H145          | Pilot P015 (Oskar Krawczyk, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P017 (Robert Grabowski, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P016 (Paweł Piotrowski, kat. B)
-  TRENING      | LST_H135           | INSTRUKTOR: P029 (Gerard Wróbel, kat. D) + SZKOLONY: T001 (Janusz Górski, kat. C)
 
-2026-06-01 | EPZA (Zakopane (TOPR)):
-  DYZUR_24H    | TOPR_AW189         [TOPR] | Pilot T002 (Krzysztof Tatrzański, kat. D)
+2026-06-10 | EPKK (Kraków-Balice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P022 (Zbigniew Zając, kat. C) + FO: P023 (Aleksander Wieczorek, kat. C)
+  DYZUR_24H    | HEMS_H145          | Pilot P017 (Robert Grabowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P010 (Jakub Dąbrowski, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P013 (Maciej Mazur, kat. B)
+  TRENING      | HEMS_H145          | INSTRUKTOR: P030 (Hubert Malinowski, kat. D) + SZKOLONY: P007 (Grzegorz Lewandowski, kat. A)
 
-2026-06-02 | EPKK (Kraków-Balice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P026 (Damian Majewski, kat. C) + FO: P027 (Eryk Olszewski, kat. C)
-  DYZUR_24H    | HEMS_H145          | Pilot P018 (Sebastian Pawłowski, kat. B)
+2026-06-10 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P005 (Edward Kowalczyk, kat. A)
+
+2026-06-10 | EPLL (Łódź-Lublinek):
+  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P028 (Feliks Jaworski, kat. D) + FO: P020 (Urban Adamczyk, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
+
+2026-06-10 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
   ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
 
-2026-06-02 | EPKT (Katowice-Pyrzowice):
-  ON_CALL_24H  | STOL_KODIAK_100    | Pilot P009 (Igor Szymański, kat. A)
+2026-06-10 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P024 (Błażej Jabłoński, kat. C) + FO: P021 (Wojciech Dudek, kat. C)
+  DYZUR_24H    | HEMS_H145          | Pilot P018 (Sebastian Pawłowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P001 (Adam Kowalski, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P009 (Igor Szymański, kat. A)
 
-2026-06-02 | EPLL (Łódź-Lublinek):
-  DYZUR_24H    | HEMS_H145          | Pilot P016 (Paweł Piotrowski, kat. B)
+2026-06-10 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P029 (Gerard Wróbel, kat. D) + FO: P027 (Eryk Olszewski, kat. C)
+  DYZUR_24H    | HEMS_H145          | Pilot P014 (Norbert Kwiatkowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P019 (Tomasz Michalski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
+
+2026-06-11 | EPKK (Kraków-Balice):
+  DYZUR_24H    | HEMS_H145          | Pilot P011 (Krzysztof Kozłowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P024 (Błażej Jabłoński, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P019 (Tomasz Michalski, kat. B)
+
+2026-06-11 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P008 (Henryk Zieliński, kat. A)
+
+2026-06-11 | EPLL (Łódź-Lublinek):
+  DYZUR_24H    | HEMS_H145          | Pilot P015 (Oskar Krawczyk, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P017 (Robert Grabowski, kat. B)
   ZMIANA_6H    | LST_H135           | Pilot P020 (Urban Adamczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P012 (Łukasz Jankowski, kat. B)
 
-2026-06-02 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
-  ZMIANA_6H    | LST_H135           | Pilot P015 (Oskar Krawczyk, kat. B)
+2026-06-11 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P001 (Adam Kowalski, kat. A)
   ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
 
-2026-06-02 | EPWA (Warszawa-Chopina):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P021 (Wojciech Dudek, kat. C) + FO: P023 (Aleksander Wieczorek, kat. C)
-  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P024 (Błażej Jabłoński, kat. C) + FO: P015 (Oskar Krawczyk, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P015 (Oskar Krawczyk, kat. B)
-  TRENING      | HEMS_H145          | INSTRUKTOR: P030 (Hubert Malinowski, kat. D) + SZKOLONY: P009 (Igor Szymański, kat. A)
+2026-06-11 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P030 (Hubert Malinowski, kat. D) + FO: P025 (Czesław Król, kat. C)
+  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P026 (Damian Majewski, kat. C) + FO: P016 (Paweł Piotrowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P005 (Edward Kowalczyk, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P018 (Sebastian Pawłowski, kat. B)
 
-2026-06-02 | EPWR (Wrocław-Strachowice):
-  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P022 (Zbigniew Zając, kat. C) + FO: P030 (Hubert Malinowski, kat. D)
-  DYZUR_24H    | HEMS_H145          | Pilot P013 (Maciej Mazur, kat. B)
-  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
-  ZMIANA_6H    | LST_H135           | Pilot P014 (Norbert Kwiatkowski, kat. B)
+2026-06-11 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | HEMS_H145          | Pilot P012 (Łukasz Jankowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P029 (Gerard Wróbel, kat. D)
+  ZMIANA_6H    | LST_H135           | Pilot P003 (Cezary Wiśniewski, kat. A)
+  TRENING      | LST_H135           | INSTRUKTOR: P028 (Feliks Jaworski, kat. D) + SZKOLONY: P022 (Zbigniew Zając, kat. C)
 
-2026-06-02 | EPZA (Zakopane (TOPR)):
-  DYZUR_24H    | TOPR_AW189         [TOPR] | [ZAŁOGA 2-OSOBOWA] PIC: T001 (Janusz Górski, kat. C) + FO: T003 (Marek Halny, kat. D)
+2026-06-12 | EPKK (Kraków-Balice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P021 (Wojciech Dudek, kat. C) + FO: P024 (Błażej Jabłoński, kat. C)
+  DYZUR_24H    | HEMS_H145          | Pilot P018 (Sebastian Pawłowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P026 (Damian Majewski, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P005 (Edward Kowalczyk, kat. A)
+
+2026-06-12 | EPKT (Katowice-Pyrzowice):
+  ON_CALL_24H  | STOL_GRAND_CARAVAN_EX | Pilot P010 (Jakub Dąbrowski, kat. A)
+
+2026-06-12 | EPLL (Łódź-Lublinek):
+  DYZUR_24H    | HEMS_H145          | Pilot P014 (Norbert Kwiatkowski, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P020 (Urban Adamczyk, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P002 (Bartosz Nowak, kat. A)
+
+2026-06-12 | EPRZ (Rzeszów-Jasionka (FOB-LST 7-21)):
+  ZMIANA_6H    | LST_H135           | Pilot P004 (Dariusz Wójcik, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P009 (Igor Szymański, kat. A)
+
+2026-06-12 | EPWA (Warszawa-Chopina):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P023 (Aleksander Wieczorek, kat. C) + FO: P027 (Eryk Olszewski, kat. C)
+  DYZUR_24H    | HEMS_H145          | [ZAŁOGA 2-OSOBOWA] PIC: P028 (Feliks Jaworski, kat. D) + FO: P013 (Maciej Mazur, kat. B)
+  ZMIANA_6H    | LST_H135           | Pilot P006 (Filip Kamiński, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P025 (Czesław Król, kat. C)
+  TRENING      | HEMS_H145          | INSTRUKTOR: P030 (Hubert Malinowski, kat. D) + SZKOLONY: P001 (Adam Kowalski, kat. A)
+
+2026-06-12 | EPWR (Wrocław-Strachowice):
+  DYZUR_24H    | MEDEVAC_AW101      | [ZAŁOGA 2-OSOBOWA] PIC: P029 (Gerard Wróbel, kat. D) + FO: P022 (Zbigniew Zając, kat. C)
+  ZMIANA_6H    | LST_H135           | Pilot P008 (Henryk Zieliński, kat. A)
+  ZMIANA_6H    | LST_H135           | Pilot P007 (Grzegorz Lewandowski, kat. A)
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-SLOTY NIEOBSADZONE (12):
+SLOTY NIEOBSADZONE (11):
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  2026-05-28 | EPKK | DYZUR_24H | MEDEVAC_AW101
-  2026-05-28 | EPWR | DYZUR_24H | MEDEVAC_AW101
-  2026-05-28 | EPWA | DYZUR_24H | HEMS_H145
-  2026-05-28 | EPKK | DYZUR_24H | HEMS_H145
-  2026-05-28 | EPWR | DYZUR_24H | HEMS_H145
-  2026-05-28 | EPZA | DYZUR_24H | TOPR_AW189
-  2026-05-30 | EPKK | DYZUR_24H | MEDEVAC_AW101
-  2026-05-30 | EPWR | DYZUR_24H | MEDEVAC_AW101
-  2026-05-31 | EPZA | DYZUR_24H | TOPR_AW189
-  2026-06-01 | EPKK | DYZUR_24H | MEDEVAC_AW101
-  2026-06-01 | EPWR | DYZUR_24H | MEDEVAC_AW101
-  2026-06-01 | EPLL | DYZUR_24H | HEMS_H145
+  2026-06-06 | EPKK | DYZUR_24H | HEMS_H145
+  2026-06-06 | EPLL | DYZUR_24H | HEMS_H145
+  2026-06-06 | EPWA | TRENING | HEMS_H145
+  2026-06-07 | EPWR | DYZUR_24H | MEDEVAC_AW101
+  2026-06-07 | EPWA | DYZUR_24H | HEMS_H145
+  2026-06-07 | EPKK | DYZUR_24H | HEMS_H145
+  2026-06-09 | EPKK | DYZUR_24H | MEDEVAC_AW101
+  2026-06-09 | EPWR | DYZUR_24H | MEDEVAC_AW101
+  2026-06-11 | EPKK | DYZUR_24H | MEDEVAC_AW101
+  2026-06-11 | EPWR | DYZUR_24H | MEDEVAC_AW101
+  2026-06-12 | EPWR | DYZUR_24H | HEMS_H145

@@ -78,7 +78,7 @@ def cmd_alerty():
     alerty_p = alerty_przeciazenia(piloci, dzien)
 
     print("=" * 80)
-    print(f"ALERTY OPERACYJNE KORPUSU KPRL — {dzien}")
+    print(f"ALERTY OPERACYJNE — {dzien}")
     print("=" * 80)
 
     print(f"\n[1] ALERTY TYPE RATING ({len(alerty_tr)})")
@@ -109,7 +109,7 @@ def cmd_statystyki():
     print("=" * 80)
     print(f"STATYSTYKI SYSTEMU FRMS — {dzien}")
     print("=" * 80)
-    print(f"\nLiczba pilotów Korpusu KPRL: {stat['liczba_pilotow']}")
+    print(f"\nLiczba pilotów MEDEVAC: {stat['liczba_pilotow']}")
     print("\nRozkład kategorii kompetencyjnych:")
     for kat, liczba in stat["rozklad_kategorii"].items():
         print(f"  Kategoria {kat}: {liczba:3d} pilotów")

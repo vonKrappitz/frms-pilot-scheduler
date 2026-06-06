@@ -1,7 +1,7 @@
 # Copyright 2026 Maciej M. Kasperek ("vonKrappitz")
 # SPDX-License-Identifier: Apache-2.0
 """
-Modele danych Fatigue Risk Management System (FRMS) dla Korpusu KPRL.
+Modele danych Fatigue Risk Management System (FRMS) dla pilotów MEDEVAC.
 
 Zgodne z EASA AMC1 ORO.FTL.110 oraz GM1 ORO.FTL.120.
 """
@@ -180,7 +180,7 @@ class SesjaSymulatorowa:
 
 @dataclass
 class Pilot:
-    """Pilot MEDEVAC w Korpusie KPRL."""
+    """Pilot MEDEVAC."""
     id: str
     imie: str
     nazwisko: str

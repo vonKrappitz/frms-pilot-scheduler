@@ -1,15 +1,15 @@
 ================================================================================
-STATYSTYKI SYSTEMU FRMS — 2026-05-27
+STATYSTYKI SYSTEMU FRMS — 2026-06-06
 ================================================================================
 
-Liczba pilotów Korpusu KPRL: 33
+Liczba pilotów MEDEVAC: 30
 
 Rozkład kategorii kompetencyjnych:
   Kategoria A:  10 pilotów
   Kategoria B:  10 pilotów
-  Kategoria C:   8 pilotów
-  Kategoria D:   5 pilotów
+  Kategoria C:   7 pilotów
+  Kategoria D:   3 pilotów
 
 Type rating aktualne: 100.0%
-Piloci gotowi do dyżuru 24h: 25/33
-Średnie obciążenie 96h: 6.8h
+Piloci gotowi do dyżuru 24h: 20/30
+Średnie obciążenie 96h: 6.9h

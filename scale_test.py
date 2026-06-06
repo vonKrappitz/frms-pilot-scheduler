@@ -1,9 +1,9 @@
 # Copyright 2026 Maciej M. Kasperek ("vonKrappitz")
 # SPDX-License-Identifier: Apache-2.0
 """
-Test skalowalności grafikowania FRMS (reprodukowalność, cz. III, poz. [22]).
+Test skalowalności grafikowania FRMS (reprodukowalność wyników z powiązanej pracy).
 
-Replikuje jednostkę bazową (30 pilotów LPR, 133 sloty tygodniowe) całkowitym
+Replikuje jednostkę bazową (30 pilotów, 133 sloty tygodniowe) całkowitym
 mnożnikiem k, nadając unikatowe identyfikatory, i mierzy odsetek obsadzonych
 slotów oraz czas generowania harmonogramu w skali docelowej. Mnożnik k ≈ 5,5
 odwzorowuje sieć docelową (około 182 pilotów i 772 sloty tygodniowe).
@@ -81,7 +81,7 @@ def main():
         obsada = len(obsadzone) / len(sloty) * 100
         print(f"{k:>2} {len(piloci):>7} {len(sloty):>6} {len(obsadzone):>10} {obsada:>7.1f}% {dt_ms:>10.1f}")
 
-    # Punkt docelowy sieci: 182 pilotów, 772 sloty tygodniowe (cz. III)
+    # Punkt docelowy sieci: 182 pilotów, 772 sloty tygodniowe
     piloci, sloty = _buduj_do(piloci_baza, sloty_baza, 182, 772)
     t0 = time.perf_counter()
     obsadzone, _ = generuj_harmonogram(sloty, piloci)

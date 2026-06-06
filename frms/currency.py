@@ -1,7 +1,7 @@
 # Copyright 2026 Maciej M. Kasperek ("vonKrappitz")
 # SPDX-License-Identifier: Apache-2.0
 """
-Moduł śledzenia świeżości operacyjnej (currency) Pilotów Korpusu KPRL.
+Moduł śledzenia świeżości operacyjnej (currency) pilotów MEDEVAC.
 
 Zgodny z EASA AMC1 ORO.FTL.110 oraz Part-FCL recency. Polityka Korpusu:
 

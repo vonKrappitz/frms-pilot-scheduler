@@ -94,7 +94,7 @@ def dobierz_pare_medevac(
     Reguły zależą od klasy maszyny:
 
     AW101 (MEDEVAC ciężki cywilny) — zawsze załoga 2-osobowa, zgodnie z
-    certyfikacją EASA CS-29. Dozwolone konfiguracje (Tabela 1 manuskryptu):
+    certyfikacją EASA CS-29. Dozwolone konfiguracje załogi dwuosobowej AW101:
       operacyjne (dwóch samodzielnych MEDEVAC): C+C, C+D, D+D
       szkoleniowa/nadzorowana: B+D — instruktor D (PIC) nadzoruje szkolonego B (FO)
 
@@ -140,7 +140,7 @@ def dobierz_pare_medevac(
         for kat in po_kategorii:
             po_kategorii[kat].sort(key=lambda p: p.obciazenie_96h(slot.data))
 
-        # Konfiguracje wg Tabeli 1 manuskryptu. Preferencja: najpierw dwa
+        # Konfiguracje obsady AW101. Preferencja: najpierw dwa
         # samodzielne MEDEVAC, oszczędzając deficytową kadrę D; B+D na końcu,
         # bo na slocie operacyjnym B nie jest samodzielny. PIC = wyższa kategoria.
         C, D, B = po_kategorii[Kategoria.C], po_kategorii[Kategoria.D], po_kategorii[Kategoria.B]

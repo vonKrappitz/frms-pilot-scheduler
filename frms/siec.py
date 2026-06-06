@@ -1,19 +1,16 @@
 # Copyright 2026 Maciej M. Kasperek ("vonKrappitz")
 # SPDX-License-Identifier: Apache-2.0
 """
-Sieć ratownictwa lotniczego po reformie 2028 (do mapy sektorów).
+Post-reform air-rescue network (for the sector map).
 
-Dane z cyklu artykułów SFT, Część I (architektura sieci) oraz Część II
-(przypisanie baz HEMS Primary do sektorów, Załącznik 1 Tabela 1). Struktura
-sektorowa: siedem Centrów Regionalnych (CRL) jako głowy sektorów oraz przypisane
-im Centra Transferowe (CT), uzupełnione o Centrum Szkoleniowo-Integracyjne
-(CSI-LRM) i bazę sezonową (CT-S).
+Sector structure: seven Regional Centres (CRL) as sector heads with their
+assigned Transfer Centres (CT), plus a training-integration centre (CSI-LRM)
+and a seasonal base (CT-S). The four Support Bases (BW) are unnamed and
+unlocated, so they are not included here: the network lists 28 locations, of
+which 24 are named (7 CRL + 15 CT + CSI-LRM + CT-S). Coordinates are
+approximate, for the schematic only.
 
-Cztery Bazy Wsparcia (BW) wymienia Część I bez nazw ani lokalizacji, więc tu ich
-nie ma: sieć liczy 28 lokalizacji, z czego 24 nazwane (7 CRL + 15 CT + CSI-LRM +
-CT-S). Współrzędne są przybliżone, na potrzeby schematu.
-
-Dane wyłącznie do warstwy mapowej; rdzeń grafikowania ich nie używa.
+Map layer only; the scheduling core does not use this data.
 """
 
 # (id, nazwa, typ, sektor, lat, lon) — sektor = głowa (CRL) sektora; dla CRL własna nazwa.

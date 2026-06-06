@@ -1,6 +1,6 @@
 # Copyright 2026 Maciej M. Kasperek ("vonKrappitz")
 # SPDX-License-Identifier: Apache-2.0
-"""Bezpośrednie testy doboru pary MEDEVAC (Tabela 1 manuskryptu).
+"""Bezpośrednie testy doboru pary MEDEVAC (reguły obsady AW101).
 
 Weryfikują nie tylko brak par zakazanych, ale przede wszystkim OSIĄGALNOŚĆ
 każdej dozwolonej konfiguracji: C+C, C+D, D+D (operacyjne) oraz B+D

@@ -56,7 +56,7 @@ def alerty_przeciazenia(piloci: list[Pilot], dzien: date) -> list[dict]:
 
 
 def statystyki_systemu(piloci: list[Pilot], dzien: date) -> dict:
-    """Zwraca statystyki agregowane systemu KPRL."""
+    """Zwraca statystyki agregowane systemu."""
     rozklad_kategorii = {k: 0 for k in Kategoria}
     type_ratings_aktualne = 0
     type_ratings_lacznie = 0

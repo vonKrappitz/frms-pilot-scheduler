@@ -17,7 +17,7 @@ from frms.export_json import eksport_do_json
 ZNACZNIK = "__DANE__"
 
 SZABLON = r"""<!DOCTYPE html>
-<!-- FRMS pilot scheduler (KPRL/LPR). Copyright 2026 Maciej M. Kasperek ("vonKrappitz"). SPDX-License-Identifier: Apache-2.0 -->
+<!-- FRMS pilot scheduler. Copyright 2026 Maciej M. Kasperek ("vonKrappitz"). SPDX-License-Identifier: Apache-2.0 -->
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
@@ -80,7 +80,7 @@ tr:hover td { background: #fafbfc; }
     <div class="container">
         <div>
             <h1>FRMS</h1>
-            <div class="subtitle" data-pl="System planowania pilotów ratownictwa lotniczego (KPRL/LPR)" data-en="Air rescue pilot scheduling system (KPRL/LPR)">System planowania pilotów ratownictwa lotniczego (KPRL/LPR)</div>
+            <div class="subtitle" data-pl="System planowania pilotów ratownictwa lotniczego" data-en="Air rescue pilot scheduling system">System planowania pilotów ratownictwa lotniczego</div>
         </div>
         <div class="lang-switch">
             <button class="lang-btn active" onclick="setLang('pl', this)">PL</button>

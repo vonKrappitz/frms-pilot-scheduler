@@ -3,7 +3,7 @@
 """
 Dane testowe (mock data) systemu FRMS.
 
-30 pilotów Korpusu KPRL w 5 bazach operacyjnych,
+30 pilotów MEDEVAC w 5 bazach operacyjnych,
 przykładowy tygodniowy zestaw slotów dyżurowych.
 """
 
@@ -118,7 +118,7 @@ BAZY = [
     Baza("EPRZ", "Rzeszów-Jasionka (FOB-LST 7-21)", "FOB-LST",
          [KlasaMaszyny.LST_LEKKI],
          Organizacja.LPR),
-    # LAW Dęblin — państwowe centrum szkoleniowe i symulatorowe Korpusu KPRL
+    # LAW Dęblin — państwowe centrum szkoleniowe i symulatorowe
     # Wszystkie 4 klasy symulatorów floty: AW101, H145, H135, Grand Caravan EX
     # Sesje currency recovery (1 dzień × 6h) oraz recurrent kwartalny (2 dni × 6h)
     Baza("EPDE", "Lotnicza Akademia Wojskowa Dęblin (symulatory)", "SZKOLENIOWA",
