@@ -84,10 +84,10 @@ python scale_test.py
 
 `scale_test.py` reuses `generuj_harmonogram` and the validator without modifying them, and scales the synthetic workforce. Expected behaviour:
 
-- At **182 pilots and 772 weekly slots**, a schedule is produced in **under one second**.
-- About **92 per cent** of slots are filled; overload alerts are **near zero**.
-- Staffing holds at **92–94 per cent** regardless of scale (about 95.7 per cent at 33 pilots, about 93.3 per cent at 182).
-- Runtime grows roughly with the square of the workforce size (about O(n²)).
+- The base unit is **30 pilots and 133 weekly slots**, of which the application fills **122 (about 92 per cent)**.
+- At **182 pilots and 772 weekly slots**, a schedule is produced in **under one second** (about 280 ms), filling **709 slots (about 92 per cent)**.
+- Staffing holds essentially flat with scale: **about 92 per cent** from the 30-pilot base unit (91.7 per cent) up to 182 pilots (91.8 per cent). Overload alerts stay isolated.
+- Run time grows roughly with the square of the workforce size (about O(n²)).
 
 Exact figures may vary slightly with the random seed and the host machine, but the orders of magnitude above should hold.
 
