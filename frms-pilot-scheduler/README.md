@@ -1,140 +1,108 @@
 # FRMS Pilot Scheduler
 
-**Fatigue Risk Management System** dla **Korpusu Pilotów Ratownictwa Lotniczego (KPRL)** — prototyp systemu informatycznego do harmonogramowania dyżurów Pilotów MEDEVAC w polskim Lotniczym Pogotowiu Ratunkowym po reformie.
+**Language:** English | [Polski](README.pl.md)
 
-## Kontekst
+A Python proof-of-concept of a **fatigue risk management system (FRMS)** for rostering helicopter emergency medical service (HEMS) / medical-evacuation (MEDEVAC) pilots across a multi-tier fleet. The tool assigns pilots to duty slots while keeping each pilot's type-rating currency valid, respecting a cumulative-duty-load limit, and rotating the pool so that no rating lapses.
 
-Repozytorium stanowi proof-of-concept systemu opisanego w artykule naukowym:
+Licensed under the Apache License, Version 2.0.
 
-> Kasperek M., *Strukturalne deficyty polskiego ratownictwa lotniczego. Propozycja reformy*, „Wiedza Obronna" 2026.
+---
 
-Praca proponuje reformę polskiego LPR opartą na czteroklasowej flocie (MEDEVAC ciężki + HEMS średni + LST lekki + STOL samolot) z 151–182 Pilotami MEDEVAC zorganizowanymi w Korpus KPRL pod nadzorem Urzędu Lotnictwa Cywilnego. Cykl dyżurów 24 godz. + 48 godz. odpoczynku w połączeniu z rotacją między czterema klasami maszyn dla utrzymania type rating EASA Part-FCL wymaga **systemu informatycznego klasy FRMS** zgodnego z normami **EASA AMC1 ORO.FTL.110** oraz **GM1 ORO.FTL.120**.
+## What it does
 
-Niniejsza implementacja demonstruje architekturę takiego systemu z trzema zmiennymi kontrolnymi:
+The fleet is multi-type, and a single pilot may hold ratings on more than one aircraft class. Coordinating such a roster by hand is error-prone once the workforce grows. This tool demonstrates that the task can be steered computationally.
 
-1. **Aktualność type rating** na każdej klasie maszyny (okno 90-dniowe EASA Part-FCL)
-2. **Kumulacyjne obciążenie operacyjne** z poprzednich 96 godzin (liczba misji, długość lotów, NACA)
-3. **Pozycja w 10-dniowym cyklu rotacyjnym** anty-rutynowym (MEDEVAC → odpoczynek → LST → HEMS → odpoczynek → STOL → odpoczynek → LST)
+For every pilot it tracks three variables continuously:
 
-## Wzorzec implementacyjny
+1. **Type-rating validity** on each aircraft class, with an alert before the 90-day recency window expires.
+2. **Cumulative duty load** over the last 96 hours (counting missions, flight length and severity).
+3. **Position in the rotation cycle**.
 
-Systemy zarządzania zasobami kadrowymi tej klasy są dziś wykorzystywane operacyjnie przez:
+On that basis it assigns pilots to duty slots so as to fill every shift within the available categories, while preventing both the overload of any one pilot and a prolonged break on any one type. The fatigue indicator enters as a **hard rule**: a pilot above the cumulative-duty-load threshold is not placed in a slot, even with a valid rating.
 
-- **Szwajcarska Rega** (Schweizerische Rettungsflugwacht)
-- **Norweska Norsk Luftambulanse** (NLA)
-- **Niemiecka ADAC Luftrettung**
+Pilots are organised into a four-tier categorisation (**A–D**) defined against European flight-crew licensing and recency rules. The categories are built so that no pilot exceeds the legal limit on type combinations.
 
-## Instalacja
+## Status
 
-Wymaga Python 3.10 lub nowszego.
+This is a **proof of concept, not a production system**. It exists to show the feasibility of computational oversight of a multi-type pilot roster of realistic size. It is released for transparency and reproducibility alongside the associated research (see *Associated work* below).
+
+## Associated work
+
+This repository is the reference implementation of the FRMS described in a study on **crew resources and fatigue management in air rescue (HEMS)**, currently under peer review. The full citation will be added here once the study is published.
+
+## Repository layout
+
+```
+frms/                FRMS package (scheduling logic and validator)
+tests/               unit tests confirming the assignment rules
+examples/            small runnable examples
+docs/                documentation
+scale_test.py        scalability benchmark (see "Reproducing the results")
+requirements.txt     Python dependencies
+CHANGELOG.md         change history
+LICENSE / NOTICE     Apache-2.0 licence and notices
+```
+
+The two public entry points referenced in the paper are `generuj_harmonogram` (schedule generation) and the schedule validator. `scale_test.py` reuses both unchanged.
+
+## Requirements
+
+- Python 3.10 or newer
+- Dependencies listed in `requirements.txt`
+
+## Installation
 
 ```bash
 git clone https://github.com/vonKrappitz/frms-pilot-scheduler.git
 cd frms-pilot-scheduler
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## Użycie
+## Usage
 
-### 1. Generowanie tygodniowego harmonogramu
-
-```bash
-python -m frms.cli generuj-harmonogram
-```
-
-Wynik: lista 84 slotów dyżurowych (7 dni × 12 slotów dziennie) z przypisanymi pilotami.
-
-### 2. Alerty operacyjne
+Run the bundled example:
 
 ```bash
-python -m frms.cli alerty
+python -m examples.demo          # or: python examples/demo.py
 ```
 
-Wyświetla:
-- Type rating wygasające w 30 dniach (priorytet WYSOKI)
-- Type rating po 60 dniach bez lotu (priorytet ŚREDNI)
-- Pilotów przekraczających 60 godzin pracy w oknie 7 dni
-
-### 3. Statystyki systemu
+Run the unit tests:
 
 ```bash
-python -m frms.cli statystyki
+python -m pytest                 # or: python -m unittest
 ```
 
-### 4. Karta pilota
+## Reproducing the results reported in the associated paper
+
+The scalability claim is reproduced with a single command:
 
 ```bash
-python -m frms.cli pilot P001
+python scale_test.py
 ```
 
-## Struktura projektu
+`scale_test.py` reuses `generuj_harmonogram` and the validator without modifying them, and scales the synthetic workforce. Expected behaviour:
 
-```
-frms-pilot-scheduler/
-├── frms/
-│   ├── models.py      # Pilot, TypeRating, SlotDyzurowy, Baza, Misja
-│   ├── data.py        # 30 testowych pilotów + 5 baz + sloty
-│   ├── scheduler.py   # Algorytm doboru pilota do slotu
-│   ├── validator.py   # Walidator EASA + generator alertów
-│   └── cli.py         # Interfejs konsoli
-├── tests/
-│   └── test_scheduler.py
-├── docs/
-│   ├── ARCHITECTURE.md
-│   └── EASA_COMPLIANCE.md
-├── examples/
-│   └── (przykładowe wyniki)
-├── requirements.txt
-└── README.md
-```
+- At **182 pilots and 772 weekly slots**, a schedule is produced in **under one second**.
+- About **92 per cent** of slots are filled; overload alerts are **near zero**.
+- Staffing holds at **92–94 per cent** regardless of scale (about 95.7 per cent at 33 pilots, about 93.3 per cent at 182).
+- Runtime grows roughly with the square of the workforce size (about O(n²)).
 
-## Algorytm doboru pilota
+Exact figures may vary slightly with the random seed and the host machine, but the orders of magnitude above should hold.
 
-Dla każdego slotu dyżurowego algorytm:
+## How to cite
 
-1. **Filtruje kandydatów** — odrzuca pilotów którzy:
-   - nie mają wymaganej kategorii kompetencyjnej (A–D)
-   - nie mają aktualnego type rating na wymaganą klasę maszyny
-   - nie odpoczywali 48 godz. po poprzednim dyżurze 24-godzinnym (EASA AMC1)
-   - przekroczyli 60 godzin pracy w oknie 7 dni
-2. **Ocenia pozostałych** według funkcji wieloskładnikowej:
-   - niskie obciążenie 96-godzinne = lepiej
-   - niższa kategoria = lepiej (oszczędność kat. D na sloty wymagające)
-   - bliski koniec ważności type rating = priorytet (potrzeba aktywności)
-3. **Wybiera najlepszego** kandydata.
+**Software:**
 
-## Testy
+> M. Kasperek, *FRMS Pilot Scheduler* (Python software), Apache-2.0. GitHub: https://github.com/vonKrappitz/frms-pilot-scheduler. Zenodo DOI: *(to be added after the first release is archived)*.
 
-```bash
-pytest tests/ -v
-```
+The citation for the associated study will be added once it is published.
 
-## Status projektu
+## License
 
-Prototyp ma charakter **proof-of-concept** ilustrujący architekturę informatyczną wymaganą do operacjonalizacji reformy LPR. **Produkcyjne wdrożenie** w Korpusie KPRL wymagałoby:
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) and [NOTICE](NOTICE).
 
-- Migracji do trwałej bazy danych (PostgreSQL/SQLite z SQLAlchemy)
-- Integracji z systemem dyspozytorni krajowej LPR
-- Integracji z bazą danych Urzędu Lotnictwa Cywilnego (rejestr type rating)
-- Interfejsu webowego (React/Vue) dla dyspozytorów oraz pilotów
-- Modułu raportowania zgodnego ze standardami EASA SAFA/SACA
-- Zabezpieczeń RODO oraz audyt log
+## Author
 
-## Licencja
-
-Copyright 2026 Maciej M. Kasperek ("vonKrappitz").
-Licencja Apache 2.0 — patrz pliki `LICENSE` (pełna treść) i `NOTICE` (nota autorska). Pliki źródłowe noszą nagłówek `SPDX-License-Identifier: Apache-2.0`.
-
-## Autor
-
-**Maciej M. Kasperek** ("vonKrappitz"), niezależny analityk, Opole.
-ORCID: 0009-0008-7419-0851 · GitHub: [vonKrappitz](https://github.com/vonKrappitz)
-
-## Cytowanie
-
-Przy wykorzystaniu kodu prosimy o cytowanie pracy źródłowej:
-
-```
-Kasperek M., Strukturalne deficyty polskiego ratownictwa lotniczego.
-Propozycja reformy, "Wiedza Obronna" 2026.
-```
+Maciej Kasperek — GitHub [@vonKrappitz](https://github.com/vonKrappitz) · ORCID [0009-0008-7419-0851](https://orcid.org/0009-0008-7419-0851)
