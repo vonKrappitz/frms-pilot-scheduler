@@ -84,9 +84,9 @@ python scale_test.py
 
 `scale_test.py` używa `generuj_harmonogram` i walidatora bez ich modyfikacji, skalując syntetyczną załogę. Oczekiwane zachowanie:
 
-- Przy **182 pilotach i 772 slotach tygodniowych** grafik powstaje w **mniej niż sekundę**.
-- Obsadzonych jest około **92 procent** slotów, alertów przeładowania jest **blisko zera**.
-- Obsada utrzymuje się na **92–94 procentach** niezależnie od skali (około 95,7 procent przy 33 pilotach, około 93,3 procent przy 182).
+- Jednostka bazowa to **30 pilotów i 133 sloty tygodniowe**, z których aplikacja obsadza **122 (około 92 procent)**.
+- Przy **182 pilotach i 772 slotach tygodniowych** grafik powstaje w **mniej niż sekundę** (około 280 ms), obsadzając **709 slotów (około 92 procent)**.
+- Obsada utrzymuje się płasko ze skalą: **około 92 procent** od jednostki bazowej 30 pilotów (91,7 procent) po 182 pilotów (91,8 procent). Alerty przeładowania pozostają pojedyncze.
 - Czas rośnie mniej więcej z kwadratem liczby pilotów (około O(n²)).
 
 Dokładne liczby mogą się nieznacznie różnić w zależności od ziarna losowego i maszyny, ale rzędy wielkości powyżej powinny się utrzymać.
