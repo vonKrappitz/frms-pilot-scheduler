@@ -1,0 +1,15 @@
+================================================================================
+STATYSTYKI SYSTEMU FRMS — 2026-05-27
+================================================================================
+
+Liczba pilotów Korpusu KPRL: 33
+
+Rozkład kategorii kompetencyjnych:
+  Kategoria A:  10 pilotów
+  Kategoria B:  10 pilotów
+  Kategoria C:   8 pilotów
+  Kategoria D:   5 pilotów
+
+Type rating aktualne: 100.0%
+Piloci gotowi do dyżuru 24h: 25/33
+Średnie obciążenie 96h: 6.8h

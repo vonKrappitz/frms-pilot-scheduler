@@ -1,0 +1,3 @@
+/usr/bin/python3: Error while finding module specification for 'frms.cli' (ModuleNotFoundError: No module named 'frms')
+
+[...skrócone do pierwszych 30 linii dla przykładu...]

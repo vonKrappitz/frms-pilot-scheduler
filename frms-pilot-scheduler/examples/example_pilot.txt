@@ -1,0 +1,25 @@
+================================================================================
+KARTA PILOTA — P001
+================================================================================
+Imię i nazwisko: Adam Kowalski
+Kategoria: A
+Baza macierzysta: EPWA
+Obciążenie 96h: 11.6h
+Godziny od ostatniego dyżuru 24h: 48h
+Gotowy do dyżuru 24h: TAK
+
+Type ratings (2):
+  LST_LEKKI          | AKTUALNY    | wygasa 2027-05-23 (za 362 dni) | ostatni lot 2026-05-23 (3 dni temu)
+  STOL_SAMOLOT       | AKTUALNY    | wygasa 2027-04-21 (za 330 dni) | ostatni lot 2026-04-21 (35 dni temu)
+
+Historia misji (11 w ostatnich 30 dniach):
+  2026-05-24 | 2.1h | STOL_SAMOLOT       | DYZUR_24H    | NACA 3
+  2026-05-24 | 2.0h | LST_LEKKI          | ON_CALL_24H  | NACA 4
+  2026-05-23 | 3.3h | LST_LEKKI          | ZMIANA_6H    | NACA 2
+  2026-05-22 | 2.4h | MEDEVAC_CIEZKI     | ON_CALL_24H  | NACA 6
+  2026-05-22 | 1.8h | HEMS_SREDNI        | ZMIANA_6H    | NACA 5
+  2026-05-19 | 1.0h | MEDEVAC_CIEZKI     | ON_CALL_24H  | NACA 6
+  2026-05-13 | 3.3h | HEMS_SREDNI        | ZMIANA_6H    | NACA 2
+  2026-05-08 | 0.7h | HEMS_SREDNI        | ON_CALL_24H  | NACA 3
+  2026-05-03 | 0.8h | STOL_SAMOLOT       | ON_CALL_24H  | NACA 5
+  2026-05-02 | 1.6h | HEMS_SREDNI        | ON_CALL_24H  | NACA 4

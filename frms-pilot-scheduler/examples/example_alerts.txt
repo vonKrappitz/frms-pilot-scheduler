@@ -1,0 +1,30 @@
+================================================================================
+ALERTY OPERACYJNE KORPUSU KPRL — 2026-05-27
+================================================================================
+
+[1] ALERTY TYPE RATING (28)
+--------------------------------------------------------------------------------
+  [ŚREDNI] P009 Igor Szymański            kat. A | LST_H135           | wygasa za 276 dni | od lotu  89 dni
+  [ŚREDNI] P011 Krzysztof Kozłowski       kat. B | LST_H135           | wygasa za 276 dni | od lotu  89 dni
+  [ŚREDNI] P022 Zbigniew Zając            kat. C | HEMS_H145          | wygasa za 276 dni | od lotu  89 dni
+  [ŚREDNI] P017 Robert Grabowski          kat. B | HEMS_H145          | wygasa za 278 dni | od lotu  87 dni
+  [ŚREDNI] P021 Wojciech Dudek            kat. C | STOL_KODIAK_100    | wygasa za 278 dni | od lotu  87 dni
+  [ŚREDNI] P024 Błażej Jabłoński          kat. C | MEDEVAC_AW101      | wygasa za 278 dni | od lotu  87 dni
+  [ŚREDNI] P019 Tomasz Michalski          kat. B | HEMS_H145          | wygasa za 279 dni | od lotu  86 dni
+  [ŚREDNI] P019 Tomasz Michalski          kat. B | LST_H135           | wygasa za 279 dni | od lotu  86 dni
+  [ŚREDNI] P021 Wojciech Dudek            kat. C | HEMS_H145          | wygasa za 280 dni | od lotu  85 dni
+  [ŚREDNI] P006 Filip Kamiński            kat. A | LST_H135           | wygasa za 281 dni | od lotu  84 dni
+  [ŚREDNI] P024 Błażej Jabłoński          kat. C | HEMS_H145          | wygasa za 283 dni | od lotu  82 dni
+  [ŚREDNI] P024 Błażej Jabłoński          kat. C | STOL_KODIAK_100    | wygasa za 285 dni | od lotu  80 dni
+  [ŚREDNI] P024 Błażej Jabłoński          kat. C | LST_H135           | wygasa za 286 dni | od lotu  79 dni
+  [ŚREDNI] P030 Hubert Malinowski         kat. D | STOL_KODIAK_100    | wygasa za 287 dni | od lotu  78 dni
+  [ŚREDNI] P027 Eryk Olszewski            kat. C | STOL_KODIAK_100    | wygasa za 288 dni | od lotu  77 dni
+  [ŚREDNI] P005 Edward Kowalczyk          kat. A | LST_H135           | wygasa za 291 dni | od lotu  74 dni
+  [ŚREDNI] P020 Urban Adamczyk            kat. B | LST_H135           | wygasa za 295 dni | od lotu  70 dni
+  [ŚREDNI] P030 Hubert Malinowski         kat. D | MEDEVAC_AW101      | wygasa za 295 dni | od lotu  70 dni
+  [ŚREDNI] P030 Hubert Malinowski         kat. D | LST_H135           | wygasa za 295 dni | od lotu  70 dni
+  [ŚREDNI] P005 Edward Kowalczyk          kat. A | STOL_KODIAK_100    | wygasa za 296 dni | od lotu  69 dni
+
+[2] ALERTY OBCIĄŻENIA (0)
+--------------------------------------------------------------------------------
+  Brak alertów.
