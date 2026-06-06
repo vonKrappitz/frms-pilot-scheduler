@@ -1,15 +1,18 @@
-# Architektura FRMS Pilot Scheduler
+# Architecture — FRMS Pilot Scheduler
 
-## Warstwy aplikacji
+Identifiers (class, function and field names) are kept in Polish to match the
+names referenced in the associated study. The prose is in English.
+
+## Application layers
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      Interfejs CLI                          │
-│            (frms/cli.py — komendy konsoli)                  │
+│                        CLI interface                        │
+│              (frms/cli.py — console commands)               │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                   Warstwa biznesowa                         │
+│                       Business layer                        │
 │   ┌──────────────────────┐  ┌──────────────────────────┐    │
 │   │  scheduler.py        │  │  validator.py            │    │
 │   │  - dobierz_pilota    │  │  - alerty_type_rating    │    │
@@ -19,131 +22,130 @@
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                   Warstwa modeli                            │
+│                        Model layer                          │
 │              (frms/models.py — dataclasses)                 │
 │   Pilot, TypeRating, SlotDyzurowy, Baza, Misja              │
-│   Enumy: Kategoria, KlasaMaszyny, TypDyzuru, SkalaNACA      │
+│   Enums: Kategoria, KlasaMaszyny, TypDyzuru, SkalaNACA       │
 └─────────────────────────────────────────────────────────────┘
                             ↓
 ┌─────────────────────────────────────────────────────────────┐
-│                   Warstwa danych                            │
-│  (frms/data.py — mock data 30 pilotów + 5 baz + sloty)      │
-│  W wersji produkcyjnej: PostgreSQL + SQLAlchemy ORM         │
+│                         Data layer                          │
+│   (frms/data.py — mock data: 30 pilots, 5 bases, slots)     │
+│   Production target: PostgreSQL + SQLAlchemy ORM            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Główne klasy
+## Main classes
 
 ### Pilot
 
-Reprezentuje pojedynczego Pilota MEDEVAC w Korpusie KPRL.
+Represents a single MEDEVAC pilot.
 
-**Pola:**
+**Fields:**
 - `id`, `imie`, `nazwisko`, `kategoria` (A/B/C/D)
-- `baza_macierzysta` — kod ICAO bazy operacyjnej
-- `type_ratings` — lista uprawnień EASA Part-FCL na klasy maszyn
-- `historia_misji` — lista misji wykonanych w ostatnich 30 dniach
+- `baza_macierzysta` — ICAO code of the home operating base
+- `type_ratings` — list of EASA Part-FCL ratings per aircraft class
+- `historia_misji` — missions flown in the last 30 days
 
-**Metody operacyjne:**
-- `ma_type_rating(klasa, dzien)` — czy pilot ma aktualny rating
-- `obciazenie_96h(dzien)` — kumulacyjne godziny lotu w 96h
-- `godziny_od_ostatniego_dyzuru_24h(dzien)` — sprawdza odpoczynek
-- `gotowy_do_dyzuru_24h(dzien)` — EASA AMC1 wymaga 48h
-- `przeciazony(dzien)` — czy przekroczył 60h w oknie 7 dni
+**Operational methods:**
+- `ma_type_rating(klasa, dzien)` — whether the pilot holds a current rating
+- `obciazenie_96h(dzien)` — cumulative flight hours over the last 96 hours
+- `godziny_od_ostatniego_dyzuru_24h(dzien)` — rest since the last 24-hour duty
+- `gotowy_do_dyzuru_24h(dzien)` — readiness check (48-hour rule)
+- `przeciazony(dzien)` — whether the 60-hour limit over 7 days is exceeded
 
 ### SlotDyzurowy
 
-Pojedynczy slot do obsadzenia w bazie.
+A single duty slot to be filled at a base.
 
-**Pola:**
+**Fields:**
 - `id`, `baza_id`, `data`, `typ_dyzuru` (24H / 6H / on-call)
-- `wymagana_klasa` — klasa maszyny
-- `wymagana_kategoria_min` — minimum A/B/C/D
-- `przypisany_pilot_id` — uzupełniany przez scheduler
+- `wymagana_klasa` — required aircraft class
+- `wymagana_kategoria_min` — minimum category A/B/C/D
+- `przypisany_pilot_id` — set by the scheduler
 
-## Algorytm doboru
+## Selection algorithm
 
-### Krok 1: Filtrowanie kandydatów
+### Step 1: candidate filtering
 
-`kandydat_kwalifikujacy_sie(pilot, slot)` zwraca `(bool, powod)`:
+`kandydat_kwalifikujacy_sie(pilot, slot)` returns `(bool, reason)`:
 
-```python
-1. Czy kategoria pilota >= wymagana_kategoria_min ?
-   → NIE: odrzuć z powodem "kategoria niedostateczna"
+```
+1. Is the pilot's category >= wymagana_kategoria_min ?
+   → NO: reject, reason "category below minimum"
 
-2. Czy pilot ma aktualny type rating na slot.wymagana_klasa ?
-   → NIE: odrzuć z powodem "brak type rating"
+2. Does the pilot hold a current type rating for slot.wymagana_klasa ?
+   → NO: reject, reason "no type rating"
 
-3. Czy slot.typ_dyzuru == DYZUR_24H i pilot.gotowy_do_dyzuru_24h ?
-   → NIE: odrzuć z powodem "niedostateczny odpoczynek"
+3. If slot.typ_dyzuru == DYZUR_24H, is gotowy_do_dyzuru_24h true ?
+   → NO: reject, reason "insufficient rest"
 
-4. Czy pilot.przeciazony(slot.data) ?
-   → TAK: odrzuć z powodem "przekroczenie 60h/7d"
+4. Is pilot.przeciazony(slot.data) true ?
+   → YES: reject, reason "exceeds 60h / 7 days"
 ```
 
-### Krok 2: Ocena kandydatów
+### Step 2: candidate scoring
 
-`score_pilota(pilot, slot)` zwraca liczbę zmiennoprzecinkową (niższa = lepiej):
+`score_pilota(pilot, slot)` returns a float (lower is better):
 
 ```
 score = obciazenie_96h
-      + 0.5 * hierarchia_kategorii    (kara za "marnowanie" wyższej kategorii)
-      - 2.0 * premia_type_rating       (jeśli rating wygasa = priorytet)
+      + 0.5 * hierarchia_kategorii    (penalty for "wasting" a higher category)
+      - 2.0 * premia_type_rating      (priority if a rating is about to expire)
 ```
 
-### Krok 3: Wybór
+### Step 3: choice
 
 ```python
 najlepszy = min(kwalifikujacy, key=score_pilota)
 ```
 
-## Zgodność z normami EASA
+## EASA alignment
 
-Pełna dokumentacja w `docs/EASA_COMPLIANCE.md`.
+Full mapping in `docs/EASA_COMPLIANCE.md`. The implementation checks against:
 
-Implementacja sprawdza zgodność z:
+- **EASA AMC1 ORO.FTL.110** — minimum rest after a 24-hour duty
+- **EASA Part-FCL** — 90-day type-rating recency window
+- **Directive 2003/88/EC** — 60-hour working-time ceiling over 7 days
+- **GM1 ORO.FTL.120** — FRMS implementation guidance
 
-- **EASA AMC1 ORO.FTL.110** — wymóg minimum 48h odpoczynku po dyżurze 24h
-- **EASA Part-FCL** — okno 90-dniowe utrzymania type rating
-- **EU 2003/88/WE** — limit 60h pracy w oknie 7 dni
-- **GM1 ORO.FTL.120** — wytyczne implementacyjne FRMS
+## Production extensions
 
-## Rozszerzenia produkcyjne
+Items required for a production deployment, none of which are part of this
+proof of concept:
 
-Lista rozszerzeń wymaganych do wdrożenia produkcyjnego:
-
-### Trwała baza danych
-
-```
-SQLite/PostgreSQL + SQLAlchemy ORM
-- migracje schematu (Alembic)
-- backup + replikacja
-- indeksy na: pilot_id, baza_id, data
-```
-
-### Integracja zewnętrzna
+### Persistent storage
 
 ```
-- API dyspozytorni krajowej LPR (real-time stan misji)
-- API ULC (rejestr type rating, walidacja uprawnień)
-- API Eurocontrol (status statków powietrznych, NOTAM)
-- System raportowania EASA SAFA/SACA
+SQLite / PostgreSQL + SQLAlchemy ORM
+- schema migrations (Alembic)
+- backup + replication
+- indexes on: pilot_id, baza_id, data
 ```
 
-### Interfejs użytkownika
+### External integration
 
 ```
-Frontend: React lub Vue.js
-- Dashboard dyspozytora (real-time)
-- Aplikacja mobilna dla pilotów (status dyżuru, alerty)
-- Panel administracyjny ULC (zarządzanie type rating)
+- national air-rescue dispatch API (real-time mission state)
+- national civil aviation authority API (type-rating registry, validation)
+- Eurocontrol API (aircraft status, NOTAM)
+- EASA SAFA / SACA reporting
 ```
 
-### Bezpieczeństwo i zgodność RODO
+### User interface
 
 ```
-- Autoryzacja: OAuth2 / SAML
-- Szyfrowanie: AES-256 dla danych wrażliwych
-- Audyt log: każda zmiana harmonogramu
-- Retencja danych: zgodnie z ustawą o PRM
+Frontend: React or Vue.js
+- dispatcher dashboard (real-time)
+- pilot mobile app (duty status, alerts)
+- authority panel (type-rating management)
+```
+
+### Security and data protection
+
+```
+- authorisation: OAuth2 / SAML
+- encryption: AES-256 for sensitive data
+- audit log: every schedule change
+- data retention: per applicable EMS legislation and GDPR
 ```
