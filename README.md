@@ -39,7 +39,6 @@ examples/            small runnable examples
 docs/                documentation
 scale_test.py        scalability benchmark (see "Reproducing the results")
 requirements.txt     Python dependencies
-CHANGELOG.md         change history
 LICENSE / NOTICE     Apache-2.0 licence and notices
 ```
 
