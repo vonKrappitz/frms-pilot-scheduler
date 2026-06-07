@@ -39,7 +39,6 @@ examples/            małe uruchamialne przykłady
 docs/                dokumentacja
 scale_test.py        test skalowalności (patrz "Odtworzenie wyników")
 requirements.txt     zależności Pythona
-CHANGELOG.md         historia zmian
 LICENSE / NOTICE     licencja Apache-2.0 i noty
 ```
 
