@@ -94,7 +94,7 @@ Dokładne liczby mogą się nieznacznie różnić w zależności od ziarna losow
 
 **Oprogramowanie:**
 
-> M. Kasperek, *FRMS Pilot Scheduler* (oprogramowanie w Pythonie), Apache-2.0. GitHub: https://github.com/vonKrappitz/frms-pilot-scheduler. Zenodo DOI: *10.5281/zenodo.20574880*.
+> M. Kasperek, *FRMS Pilot Scheduler* (oprogramowanie w Pythonie), Apache-2.0.<br> GitHub: https://github.com/vonKrappitz/frms-pilot-scheduler. Zenodo DOI: *10.5281/zenodo.20574880*.
 
 Cytat powiązanej pracy zostanie dodany po jej publikacji.
 
