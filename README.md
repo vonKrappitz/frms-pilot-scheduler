@@ -94,7 +94,7 @@ Exact figures may vary slightly with the random seed and the host machine, but t
 
 **Software:**
 
-> Kasperek, M. M. *FRMS Pilot Scheduler* (Python software), Apache-2.0.<br> GitHub: https://github.com/vonKrappitz/frms-pilot-scheduler. Zenodo DOI: *10.5281/zenodo.20574880*.
+> Kasperek, M.M. *FRMS Pilot Scheduler* (Python software), Apache-2.0.<br> GitHub: https://github.com/vonKrappitz/frms-pilot-scheduler. Zenodo DOI: *10.5281/zenodo.20574880*.
 
 The citation for the associated study will be added once it is published.
 
